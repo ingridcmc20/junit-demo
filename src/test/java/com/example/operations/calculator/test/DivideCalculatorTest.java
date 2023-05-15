@@ -17,17 +17,20 @@ public class DivideCalculatorTest {
     }
     
     @Test
-    void when_divideIntNumbers_expect_intNumber_test() {
+    void when_divideIntNumbers_then_intNumber_test() {
+        // 1.- Arrange
     	int a = 9;
     	int b = 3;
     	
+	// 2.- Action
     	int result = calculator.divide(a, b);
     	
+	// 3.- Assertion
     	assertEquals(3, result);
     }
     
     @Test
-    void when_divideIntNumberWithZero_expect_error_test() {
+    void when_divideIntNumberWithZero_then_error_test() {
         String expectedMessage = "/ by zero";
         
     	Exception exception = Assertions.assertThrows(ArithmeticException.class, () -> {
