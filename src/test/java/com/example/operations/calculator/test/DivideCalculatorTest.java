@@ -17,16 +17,17 @@ public class DivideCalculatorTest {
     }
     
     @Test
-    void when_divideIntNumbers_then_intNumber_test() {
-        // 1.- Arrange
-    	int a = 9;
-    	int b = 3;
+    void When_dividendIsNineAndDivisorIsThree_Then_quotientIsThree() {
+        // Arrange
+    	int dividend = 9;
+    	int divisor = 3;
+        int expectedQuotient = 3;
     	
-	// 2.- Action
-    	int result = calculator.divide(a, b);
+	    // Action
+    	int quotient = calculator.divide(a, b);
     	
-	// 3.- Assertion
-    	assertEquals(3, result);
+	    // Assertion
+    	assertEquals(expectedQuotient, quotient);
     }
     
     @Test
