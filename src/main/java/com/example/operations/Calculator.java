@@ -1,16 +1,16 @@
 package com.example.operations;
 
 public class Calculator {
-	public int sum(int a, int b) {
-		return a + b;
+	public int sum(int numberOne, int numberTwo) {
+		return numberOne + numberTwo;
 	}
 
-	public int sustract(int a, int b) {
-		return a - b;
+	public int sustract(int minuendo, int subtrahend) {
+		return minuendo - subtrahend;
 	}
 	
-	public int multiply(int a, int b) {
-		return a * b;
+	public int multiply(int multiplying	, int multiplier) {
+		return multiplying * multiplier;
 	}
 	
 	public int divide(int dividend, int divisor) {

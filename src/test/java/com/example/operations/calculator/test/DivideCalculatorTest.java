@@ -31,17 +31,21 @@ public class DivideCalculatorTest {
     }
     
     @Test
-    void when_divideIntNumberWithZero_then_error_test() {
+    void When_divisorIsCero_Then_arithmeticException() {
+        //Arrange
         String expectedMessage = "/ by zero";
         
     	Exception exception = Assertions.assertThrows(ArithmeticException.class, () -> {
-        	int a = 9;
-        	int b = 0;
-        	calculator.divide(a, b);
+        	int dividend = 9;
+        	int divisor = 0;
+
+            //Action
+        	calculator.divide(dividend, divisor);
         });
     	
         String actualMessage = exception.getMessage();
     	
+        //Assertion
         Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 }
